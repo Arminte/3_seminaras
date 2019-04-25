@@ -1,0 +1,7 @@
+getwd()
+setwd("C:/Users/globy/Desktop")
+getwd()
+data <- read.csv("data-table.csv")
+str(data)
+tapply(data$ReikÅ.mÄ.,INDEX=data$AmÅ.ius..tikslinÄ.s.amÅ.iaus.grupÄ.s., FUN = mean)
+plot(data$ï..Laikotarpis,data$ReikÅ.mÄ., "l")
